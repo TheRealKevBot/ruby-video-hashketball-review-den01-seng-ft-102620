@@ -232,25 +232,25 @@ def player_stats(player_name)
 end
 
 #
-def biggest_shoe
-  game_hash.each_with_object([]) do |(local, data), shoes|
-    data[:players].each do |(player_data)|
-      shoes << player_data[:shoe]
-    end
-    return shoes.max
-  end
-end
-#
+# def biggest_shoe
+#   game_hash.each_with_object([]) do |(local, data), shoes|
+#     data[:players].each do |(player_data)|
+#       shoes << player_data[:shoe]
+#     end
+#     return shoes.max
+#   end
+# end
+# #
 
-def big_shoe_rebounds
-  #biggest_shoe
-  game_hash.each do |(local, data)|
-    data[:players].each do |(player_data)|
-      if player_data[:shoe] == biggest_shoe
-        return player_data[:rebounds]
-      end
-    end
-  end
-end
+# def big_shoe_rebounds
+#   #biggest_shoe
+#   game_hash.each do |(local, data)|
+#     data[:players].each do |(player_data)|
+#       if player_data[:shoe] == biggest_shoe
+#         return player_data[:rebounds]
+#       end
+#     end
+#   end
+# end
 
 
